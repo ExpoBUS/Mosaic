@@ -27,6 +27,21 @@ $options = $block->getOptions();
 			?>
     </div>
     
+    <div class="bgcolor">
+        <?php echo $this->formLabel($formStem . '[options][bgcolor]', __('Background color for each element:')); ?>
+        <input type="color" value="<?php echo $options['bgcolor']?>" name="<?php echo ($formStem . '[options][bgcolor]');?>" id="blocks-0-options-bgcolor">
+    </div>
+    
+    <div class="borderColor">
+        <?php echo $this->formLabel($formStem . '[options][borderColor]', __('Element border color:')); ?>
+        <input type="color" value="<?php echo $options['borderColor']?>" name="<?php echo ($formStem . '[options][borderColor]');?>" id="blocks-0-options-borderColor">
+    </div>
+    
+    <div class="alpha">
+        <?php echo $this->formLabel($formStem . '[options][alpha]', __('Background opacity for each element. From 0 to 1:')); ?>
+        <input type="number" value="<?php echo $options['alpha']?>" step="0.1" name="<?php echo ($formStem . '[options][alpha]');?>" id="blocks-0-options-bgcolor" min="0" max="1">
+    </div>
+    
     <div class="file-size">
         <?php echo $this->formLabel($formStem . '[options][file-size]', __('Image size to be used in mosaic:')); ?>
         <?php

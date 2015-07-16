@@ -1,3 +1,42 @@
+/* .grid-item .download-file, .download-file img { display: block; width: 100%;  max-height: 100%; } */
+.grid { padding-left: 4%; padding-right: 4%; }
+.grid-item { width: 100%; }
+.gutter-sizer { width: 4%; }
+.exhibit-item-caption { display: none; }
+.contenido>.exhibit-item-caption { display: block; float: right; width: 50%; padding: 10px; margin: 0px; }
+.contenido>.download-file{ width: 50%; }
+/* .contenido>.download-file>img {width: 50%;} */
+.download-file { float: left; height: 100%; padding: 5px; }
+.zoom { text-align: center; display: none; }
+.masonry, .masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+.highslide-dimming {
+	background-color: #222222;
+}
+.highslide-html-content {
+	height: 80%;
+}
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -1187,10 +1226,10 @@ two columns for large devices
 ------------------------- */
 
 .grid-item {
-  width: 20%;
-  float: left;
   border: 2px solid #333;
   border-radius: 5px;
+  margin: auto;
+  overflow: overlay
 }
 
 .grid-item--width2 { width:  160px; }
