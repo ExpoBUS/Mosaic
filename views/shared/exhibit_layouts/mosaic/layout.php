@@ -64,8 +64,7 @@ function expand(e, n) {
 		h=calculado+20;
 	return hs.htmlExpand(e, { contentId: 'item'+n, wrapperClassName: 'highslide-white', outlineType: 'outer-glow', width: 0.5*$(window).width(), height: h, objectWidth: 0.5*$(window).width(), objectHeight: 0.8*$(window).height(), transitions: ['fade'] } );
 }</script>
-<script>hs.graphicsDir='<?php echo(url('/highslide/graphics/')); ?>';
-hs.align = 'center';
+<script>hs.align = 'center';
 hs.dimmingOpacity = 0.75;
 hs.showCredits = false;
 $('.contenido').css('height',$('.highslide-html').css('height'));
@@ -92,7 +91,6 @@ $('.contenido').css('height',$('.highslide-html').css('height'));
     <?php $n++;
     endforeach; ?>
 </div>
-
 <script>
 window.onload=function() {
 	var elem = document.querySelector('.grid');
