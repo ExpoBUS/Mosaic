@@ -1,0 +1,1 @@
+Plugin for Omeka Exhibit Builder that adds a tiled layout for exhibitions. It uses Highslide and Masonry javascript libraries.
